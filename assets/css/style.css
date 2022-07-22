@@ -1,0 +1,542 @@
+/*
+Template Name : Brakey 
+Author : Tanvir Ahmed Tofan
+Website : http://www.github.com/tofanapb
+Email : Tanvirhossaintofan1997@gmail.com
+*/
+
+/*=====Font=============*/
+@font-face {
+    font-family: 'SFProDisplay-Bold';
+    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+         url('../fonts/SFProDisplay-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'SFProDisplay-Light';
+    src: url('../fonts/SFProDisplay-Light.woff2') format('woff2'),
+         url('../fonts/SFProDisplay-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'SFProDisplay-Regular';
+    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2'),
+         url('../fonts/SFProDisplay-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    font-family: 'SFProDisplay-Light';
+    font-size: 16px;
+    background: #F5F5F5;
+    color: #686868;
+    font-weight: 400;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+/*================
+    Menu css
+=============*/
+.menu_area ul, .call_details ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu_area ul li {
+    display: inline-block;
+    padding-right: 20px;
+    padding-top: 27px;
+}
+
+.menu_area li a {
+    font-size: 20px;
+    color: #686868;
+    padding-bottom: 20px;
+}
+
+.menu_toggle {
+    color: #000;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    bottom: 0;
+    margin: auto;
+    display: none;
+}
+
+.menu_fixed_area {
+    position: fixed;
+    width: 100%;
+    height: auto;
+    top: 0;
+    left: 0;
+    padding: 15px 0;
+    background: #F5F5F5;
+    z-index:999;
+    transition: .5s;
+}
+.menu_fixed_area.menu_stiky_fixed {
+    background: #F5F5F5;
+    z-index:999;
+    padding: 15px 0;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .22);
+}
+/*================
+ header_area css
+=============*/
+.call_details {
+    padding-top: 15px;
+}
+.call_details li i {
+    color: #9AB3BF;
+    padding-right: 10px;
+}
+.menu_btn a {
+    display: inline-block;
+    color: #fff;
+    background: #FF9A41;
+    font-size: 18px;
+    font-family: 'SFProDisplay-Bold';
+    padding: 5px 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px #DFE0E0;
+}
+
+.menu_btn {
+    padding-top: 20px;
+    text-align: right;
+}
+.menu_area li a:hover {
+    color: #498096;
+    border-bottom: 5px solid #498096;
+}
+
+.header_top_area {
+    border-bottom: 6px solid #EEEFEF;
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+#header_area {
+    position: relative;
+    z-index: 1;
+}
+
+.header_top_fixed_img {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 100%;
+    height: auto;
+}
+/*================
+ hero_area css
+=============*/
+.hero_area {
+    padding: 20px 0;
+}
+.hero_content_inner {
+    position: relative;
+}
+
+.right_img_absulate {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.hero_single_item {
+    padding-top: 200px;
+}
+
+.hero_single_item h2 {
+    font-family: 'SFProDisplay-Bold';
+    font-size: 50px;
+    color: #000000;
+}
+.wrap {
+    color: #498096;
+    font-family: 'SFProDisplay-Bold';
+    font-size: 50px;
+}
+.patner_item_content {
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 100px;
+}
+
+.patner_single_item {
+    flex-basis: 30%;
+    align-self: center;
+}
+
+.contact_form_area {
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, .12);
+    margin-top: 50px;
+}
+
+.contact_form_area h4 {
+    font-size: 19px;
+    color: #498096;
+    font-family: 'SFProDisplay-Bold';
+}
+
+.contact_form_area p {
+    font-size: 20px;
+    line-height: 1.2;
+}
+.contact_form input, .contact_form textarea {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #CCD9DF;
+    border-radius: 8px;
+    padding: 10px;
+}
+.contact_form input::placeholder, .contact_form textarea::placeholder {
+    color: #498096;
+    font-size: 15px;
+}
+.contact_form input:focus, .contact_form textarea:focus {
+    outline-style: none;
+}
+.contact_form textarea {
+    height: 180px;
+}
+.contact_form input[type="submit"] {
+    font-size: 18px;
+    color: #fff;
+    background: #FF9A41;
+    line-height: 1;
+    font-family: 'SFProDisplay-Bold';
+    cursor: pointer;
+}
+/*================
+ about_video_area css
+=============*/
+.about_video_area {
+    position: relative;
+    padding: 80px 0;
+}
+
+.left_absulate_img {
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    top: 0;
+}
+
+.about_video_content_wrapper {
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .20);
+}
+.about_text_content_inner {
+    padding: 30px 40px;
+}
+
+.section_title h2 {
+    font-size: 19px;
+    font-family: 'SFProDisplay-Bold';
+    color: #498096;
+}
+.section_title h2:first-child {
+    font-family: 'SFProDisplay-Light';
+}
+.section_title p {
+    color: #686868;
+    font-size: 18px;
+    line-height: 1.3;
+    padding-top: 10px;
+}
+.about_text_content_item p {
+    font-size: 18px;
+}
+.about_text_content_item h4 {
+    color: #686868;
+    font-size: 18px;
+    font-family: 'SFProDisplay-Bold';
+}
+.section_title {
+    margin-bottom: 30px;
+}
+a.section_boxed-btn {
+    display: inline-block;
+    background: #FF9A41;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'SFProDisplay-Bold';
+    padding: 8px 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .12);
+}
+a.section_boxed-btn:hover, .menu_btn a:hover {
+    color: #FF9A41;
+    background: transparent;
+}
+.about_video_img {
+    position: relative;
+    height: 100%;
+    display: table;
+    width: 100%;
+    z-index: 1;
+}
+.about_video_img:before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000000;
+    opacity: .5;
+    z-index: -1;
+}
+.about_video_content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.about_video_content a i {
+    color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    line-height: 46px;
+    padding-left: 7px;
+}
+
+.about_video_content h4 {
+    font-size: 19px;
+    color: #fff;
+}
+/*================
+ servics_section_area css
+=============*/
+.servics_section_area {
+    position: relative;
+    padding-bottom: 50px;
+}
+
+.servics_left_absolute_img {
+    position: absolute;
+    bottom: -50px;
+    left: -60px;
+}
+.servics_single_item {margin-bottom: 35px;padding-right: 50px;}
+
+.servics_single_item img {
+    margin-bottom: 15px;
+}
+/*================
+ product_area css
+=============*/
+.product_area_wrapper {
+    background: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .20);
+    padding: 50px 40px;
+    z-index:99;
+}
+
+.product_area {
+    padding-bottom: 100px;
+    padding-top: 30px;
+    position: relative;
+}
+
+.product_left_area a.section_boxed-btn {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.product_single_item {
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.product_single_item img {
+    margin-bottom: 20px;
+}
+/*================
+ product_download_area css
+=============*/
+.product_download_area {
+    position: relative;
+    padding: 80px 0;
+}
+.product_download_area::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #498096;
+    opacity: .9;
+}
+.product_dnld_right_img {
+    position: absolute;
+    height: 100%;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    top: -80%;
+    text-align: right;
+}
+.product_book_img {
+    margin: -160px 0;
+}
+
+.product_dnld_content .section_title h2 {
+    color: #fff;
+}
+
+.product_dnld_content {
+    float: right;
+}
+.product_dnld_content a.section_boxed-btn {
+    margin-top: 30px;
+}
+/*================
+ project_area css
+=============*/
+.project_area {
+    padding: 80px 0;
+    position: relative;
+}
+
+.section_title.text-center {
+    margin-bottom: 50px;
+}
+
+.project_single_item {
+    background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    display: table;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.project_title {
+    display: table-cell;
+    vertical-align: bottom;
+    padding: 20px;
+    background: linear-gradient(rgba(73, 128, 150, 0) 0%, #498096 100%);
+}
+
+.project_title h4, span {
+    color: #fff;
+    font-size: 20px;
+}
+.project_title h4, .footer_contact_title h4, .footer_social_title h4 {
+    font-family: 'SFProDisplay-Bold';
+}
+.project_btm_img {
+    position: absolute;
+    left: -35%;
+    bottom: 0;
+    z-index: -1;
+}
+/*================
+ footer_area css
+=============*/
+.footer_top_area {
+    background: linear-gradient(0deg,#498096 0%, #96b2bf 100%);
+    padding: 30px 0;
+    color: #fff;
+}
+
+.footer_logo_item a img {
+    padding-right: 30px;
+}
+.footer_contact, .footer_social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer_icon_phn ul, .footer_social ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer_contact_title h4, span, .footer_social_title h4, span {
+    font-size: 19px;
+}
+.footer_icon_phn ul li i {
+    padding-right: 15px;
+}
+.footer_icon_phn ul li:last-child {
+    padding-left: 35px;
+}
+.footer_social {
+    justify-content: flex-end;
+}
+
+.footer_social_title {
+    flex-basis: 50%;
+}
+
+.footer_social_icon ul li {
+    display: inline-block;
+    padding-left: 25px;
+}
+
+.footer_social_icon ul li i {
+    color: #fff;
+}
+
+.footer_social_icon {
+    padding-top: 28px;
+}
+.copyright_text p {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.footer_copyright {
+    background: #3E3E3E;
+    padding: 8px 0;
+}
+.top_up i {
+    font-size: 30px;
+    color: #fff;
+    background: #FF9A41;
+    padding: 6px 11px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.top_up {
+    position: fixed;
+    right: 50px;
+    bottom: 65px;
+    z-index: 99;
+}
+
+/*-----End Off Stylesheet css------Thanks------*/
